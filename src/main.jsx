@@ -25,7 +25,11 @@ const router = createBrowserRouter([
       { path: "users/:MoreInfo",
         loader: ({params})=>fetch(`https://jsonplaceholder.typicode.com/users/${params.MoreInfo}`),
         Component: MoreInfo},
-    ],
+    ], 
+  },
+  {
+    path: '*',
+    element: <h1 className='text-center mt-96'>Not Found: 404 Error</h1>
   },
 ]);
 
