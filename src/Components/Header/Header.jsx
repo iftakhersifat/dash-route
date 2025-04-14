@@ -14,7 +14,7 @@ const Header = () => {
                         <Link className='hover:text-blue-700' to="/users">Users</Link>
                     </ul>
                 </nav>
-                <button className='text-md font-bold text-gray-700 border border-white rounded-2xl bg-amber-400 p-2 hover:bg-green-600 hover:text-white'>Sign in</button>
+                <button className='text-md font-bold text-gray-700 border border-white rounded-xl bg-amber-400 p-2 mx-3 hover:bg-green-600 hover:text-white'>Sign in</button>
             </div>
         </div>
     );

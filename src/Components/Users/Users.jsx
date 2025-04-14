@@ -7,10 +7,10 @@ const Users = () => {
     console.log(useData);
     return (
         <div className='text-center mt-8'>
-            <h1>users</h1>
+            <h1 className='text-3xl font-bold text-gray-700'>Users Information</h1>
             <div className='p-4 grid grid-cols-2'>
                 {
-                    useData.map(data=><Use data={data}></Use>)
+                    useData.map(data=><Use key={data.id} data={data}></Use>)
                 }
             </div>
         </div>
