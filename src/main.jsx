@@ -12,6 +12,7 @@ import Users from './Components/Users/Users.jsx';
 import MoreInfo from './Components/Users/MoreInfo.jsx';
 import Posts from './Components/Posts/Posts.jsx';
 import Comments from './Components/Comments/Comments.jsx';
+import MoreComment from './Components/Comments/MoreComment.jsx';
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,15 @@ const router = createBrowserRouter([
           loader: ()=>fetch("https://jsonplaceholder.typicode.com/comments"),
           Component: Comments
         },
+
+        // more comments
+        {
+          path: "comments/:MoreComment",
+          loader: ({params})=>fetch(`https://jsonplaceholder.typicode.com/comments/${params.MoreComment}`),
+          Component: MoreComment
+        }
+        
+        
     ], 
   },
 
