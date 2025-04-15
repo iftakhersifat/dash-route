@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Post = () => {
+const Post = ({post}) => {
+    const {title, body} =post;
     return (
-        <div>
-            
+        <div className='text-center border border-white bg-amber-600 m-4 p-8 text-white rounded-2xl'>
+            <h1>Title: {title}</h1>
+            <p>{body}</p>
         </div>
     );
 };
