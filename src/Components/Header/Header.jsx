@@ -9,10 +9,10 @@ const Header = () => {
                 <nav>
                     <ul className='space-x-4 text-md font-bold text-gray-700 '>
                         <Link className='hover:text-blue-700' to="/">Home</Link>
-                        <Link className='hover:text-blue-700' to="/contact">Contact Us</Link>
                         <Link className='hover:text-blue-700' to="/blog">Blog</Link>
                         <Link className='hover:text-blue-700' to="/users">Users</Link>
                         <Link className='hover:text-blue-700' to="/posts">Posts</Link>
+                        <Link className='hover:text-blue-700' to="/comments">Comments</Link>
                     </ul>
                 </nav>
                 <button className='text-md font-bold text-gray-700 border border-white rounded-xl bg-amber-400 p-2 mx-3 hover:bg-green-600 hover:text-white'>Sign in</button>
