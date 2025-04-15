@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className='border-b-2 text-center border-gray-500'>
             <div className='flex justify-between p-4 text-gray-700 '>
-                <h1 className='text-md font-bold'>DashRoute</h1>
+                <h1 className='text-md font-bold'>Dash<span className='text-yellow-500'>Route</span></h1>
                 <nav>
                     <ul className='space-x-4 text-md font-bold text-gray-700 '>
                         <Link className='hover:text-blue-700' to="/">Home</Link>
