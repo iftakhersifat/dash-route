@@ -10,7 +10,7 @@ const Posts = () => {
             <h1 className='text-3xl font-bold text-gray-700'>All Posts</h1>
             <div>
                 {
-                    showPosts.map(post=><Post post={post}></Post>)
+                    showPosts.map(post=><Post key={post.id} post={post}></Post>)
                 }
             </div>
         </div>
