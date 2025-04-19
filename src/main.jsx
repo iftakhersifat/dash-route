@@ -14,6 +14,7 @@ import Posts from './Components/Posts/Posts.jsx';
 import Comments from './Components/Comments/Comments.jsx';
 import MoreComment from './Components/Comments/MoreComment.jsx';
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -47,11 +48,11 @@ const router = createBrowserRouter([
         },
 
         // more comments
-        {
-          path: "comments/:MoreComment",
-          loader: ({params})=>fetch(`https://jsonplaceholder.typicode.com/comments/${params.MoreComment}`),
-          Component: MoreComment
-        }
+        // {
+        //   path: "comments/:MoreComment",
+        //   loader: ({params})=>fetch(`https://jsonplaceholder.typicode.com/comments/${params.MoreComment}`),
+        //   Component: MoreComment
+        // }
         
         
     ], 
@@ -60,7 +61,7 @@ const router = createBrowserRouter([
   // not found
   {
     path: '*',
-    element: <h1 className='text-center mt-96'>Not Found: 404 Error</h1>
+    element: <h1 className='text-center mt-96 font-bold text-red-600'>Not Found: 404 Error</h1>
   },
 ]);
 
