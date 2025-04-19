@@ -1,6 +1,6 @@
 import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 const Footer = () => {
     return (
@@ -8,10 +8,25 @@ const Footer = () => {
             <h1 className='text-md font-bold'>Dash<span className='text-yellow-500'>Route</span></h1>
             <div>
                  <ul className='space-x-4 text-md font-bold text-gray-700 mt-4'>
-                    <Link className='hover:text-blue-700' to="/">Home</Link>
-                    <Link className='hover:text-blue-700' to="/contact">Contact Us</Link>
-                    <Link className='hover:text-blue-700' to="/blog">Blog</Link>
-                    <Link className='hover:text-blue-700' to="/users">Users</Link>
+                 <NavLink  className={({ isActive }) =>
+                        isActive ? "text-blue-500 border-b-2 border-blue-500 pb-1" : "text-gray-600 hover:text-blue-400"
+                        } to="/">Home</NavLink>
+
+                        <NavLink  className={({ isActive }) =>
+                        isActive ? "text-blue-500 border-b-2 border-blue-500 pb-1" : "text-gray-600 hover:text-blue-400"
+                      } to="/blog">Blog</NavLink>
+
+                        <NavLink  className={({ isActive }) =>
+                        isActive ? "text-blue-500 border-b-2 border-blue-500 pb-1" : "text-gray-600 hover:text-blue-400"
+                      } to="/users">Users</NavLink>
+
+                        <NavLink  className={({ isActive }) =>
+                        isActive ? "text-blue-500 border-b-2 border-blue-500 pb-1" : "text-gray-600 hover:text-blue-400"
+                      } to="/posts">Posts</NavLink>
+
+                        <NavLink  className={({ isActive }) =>
+                        isActive ? "text-blue-500 border-b-2 border-blue-500 pb-1" : "text-gray-600 hover:text-blue-400"
+                      } to="/comments">Comments</NavLink>
                     <p className='mt-4'>Copyright © 2025 - All right reserved</p>
                 </ul>
             </div>
